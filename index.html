@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Price</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="intro">
+    <h1><span class="smart">Smart</span> <span class="price">Price</span></h1>
+  </div>
+
+  <header>
+    <h1>Welcome to <span>Smart Price</span></h1>
+    <p>Compare prices from Amazon, Flipkart, and more.</p>
+  </header>
+
+  <div class="search-bar">
+    <input type="text" id="main-search" placeholder="Search for products..." onfocus="goToSearch()" />
+  </div>
+
+  <section id="home" class="section active">
+    <h2>Discover the best deals with Smart Price</h2>
+    <p>Use the search bar above to get started.</p>
+
+    <div class="product-categories">
+      <div class="category-box" id="electronics">
+        <h3>Electronics</h3>
+        <div class="photo-slot">+ Add Photo</div>
+      </div>
+      <div class="category-box" id="clothing">
+        <h3>Clothing</h3>
+        <div class="photo-slot">+ Add Photo</div>
+      </div>
+      <div class="category-box" id="food">
+        <h3>Food</h3>
+        <div class="photo-slot">+ Add Photo</div>
+      </div>
+      <div class="category-box" id="beauty">
+        <h3>Beauty</h3>
+        <div class="photo-slot">+ Add Photo</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="search" class="section">
+    <div class="search-box">
+      <input type="text" id="search-box" placeholder="Enter product name..." />
+      <button onclick="searchProduct()" title="Search">🔍</button>
+    </div>
+    <div id="results"></div>
+    <button class="back-btn" onclick="goToHome()">← Back to Home</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Smart Price. Built with ❤ for shoppers.</p>
+  </footer>
+
+  <!-- Characters -->
+  <div class="characters">
+    <div class="girls">
+      <div class="girl">
+        <div class="head"></div><div class="hair"></div><div class="face"></div><div class="mouth"></div>
+        <div class="left-arm"></div><div class="right-arm"></div><div class="body"></div>
+        <div class="bag">
+          <div class="clothes">
+            <div class="cloth1"></div><div class="cloth2"></div><div class="cloth3"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat girl 2 and 3 -->
+      <div class="girl"> ... </div>
+      <div class="girl"> ... </div>
+    </div>
+    <div class="boys">
+      <div class="boy">
+        <div class="headphones"></div><div class="snack"></div><div class="phone"></div>
+        <div class="left-arm"></div><div class="right-arm"></div><div class="body"></div><div class="mouth"></div>
+      </div>
+      <!-- Repeat boy 2 and 3 -->
+      <div class="boy"> ... </div>
+      <div class="boy"> ... </div>
+    </div>
+    <div class="owl" title="Owl"></div>
+  </div>
+
+  <audio id="hoot-sound" src="https://www.soundjay.com/animal/owl-hoo2.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
